@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>QUIZ</title>
+    <link rel="stylesheet" href="stylesheet/quiz1.css" type="text/css">
+  </head>
+  <body>
+    <section class="intro">
+      <div class="inner">
+        <div class="content1">
+          <h1>WELCOME</h1>
+          <script>
+            function countDown(sesc,elem)
+            {
+              var element=document.getElementById(elem);
+              element.innerHTML="<br><br><h2> Please wait for</h2>"+sesc+"
+              <h4>seconds</h4>";
+              if(sesc< 1){
+                clearTimeout(timer);
+                element.innerHTML='<br><h1 style="color:black">!!TEST LOADED</h1>';
+                element.innerHTML +='<a class="btn" href="">';
+              }
+            }
+          </script>
+          </div>
+          </div>
+          </section>
+   </body>
+</html>

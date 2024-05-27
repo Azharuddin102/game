@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Quiz Question</title>
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet/home.css">
+    <link href="images/my_logo.ico" type="image" rel="icon" />
+
+</head>
+<body>
+  <div id="header">
+       <div class="img1">
+          <img src="images/my_logo.png" alt="logo of company" />
+       </div>
+       <div class="img2">
+         <img src="images/the.png" alt="heading" />
+       </div>
+ </div>
+ <div id="menu">
+     <ul>
+         <a href="home.html"> <li>  HOME </li> </a>
+         <a href="about.html"> <li>  ABOUT </li> </a>
+         <a href="quizrule.html"> <li>  QUIZ RULE  </li> </a>
+         <a href="result.html"> <li>  RESULT </li> </a>
+         <a href="signup.html"> <li>  SIGN UP/LOGIN </li> </a>
+     </ul>
+ </div>
+
+    <div id="container">
+
+        <div id="start">Start Quiz!</div>
+        <div id="quiz" style="display: none">
+            <div id="question"></div>
+            <form>
+            <div id="qImg"></div>
+            <div id="choices">
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+                <div class="choice" id="D" onclick="checkAnswer('D')"></div>
+            </div>
+          <!--  <input id="button" type="button" value="submit" onclick="check">
+          --></form>
+            <div id="timer">
+                <div id="counter"></div>
+                <div id="btimeGauge"></div>
+                <div id="timeGauge"></div>
+            </div>
+            <div id="progress"></div>
+        </div>
+    </div>
+    <script src="javascript/quiz.js"></script>
+    <div id="footer">
+      <div id="logos">
+      <a href="https:\\www.facebook.com" target="_blank">  <img src="images/facebook.png" alt="facebook_logo" />  </a>
+      <a href="https:\\www.youtube.com" target="_blank">  <img src="images/youtube.png" alt="youtube_logo" />  </a>
+      <a href="https:\\www.instagram.com" target="_blank">  <img src="images/instagram.png" alt="instagram_logo" />  </a>
+      <a href="https:\\www.gmail.com" target="_blank">  <img src="images/gmail.png" alt="gmail_logo" />  </a>
+      <a href="https:\\www.twitter.com" target="_blank">  <img src="images/twitter.png" alt="twitter_logo" />  </a>
+      </div>
+      <p> 2019-20,COPYRIGHT@ TO JMI CS GROUP</p>
+    </div>
+</body>
+</html>

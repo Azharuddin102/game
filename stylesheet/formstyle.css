@@ -1,0 +1,33 @@
+#sign-up
+{
+    width: 46%;
+float: left;
+    margin: 2%;
+}
+#sign-up h3
+{
+  text-align: center;
+}
+
+#login
+{
+  width: 46%;
+float: left;
+margin: 2%;
+}
+#login h3
+{
+  text-align: center;
+}
+#footer
+{
+  margin-top: 60%;
+}
+#sign-up input,label,select
+{
+  margin-left: 2%;
+}
+#login input
+{
+    margin-left: 2%;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>QUIZ</title>
+    <style media="screen">
+      #status
+      {
+        width:600px;height:250px;background-color:rgb(227,231,237);
+      }
+      .countDown
+      {
+        color:red;margin-top:100px;
+      }
+    </style>
+    <link rel="stylesheet" href="stylesheet/quiz1.css" type="text/css">
+  </head>
+  <body>
+    <section class="intro">
+      <div class="inner">
+        <div class="content1">
+          <script type="text/javascript">
+            function countDown(secs,elem)
+            {
+              var element=document.getElementById(elem);
+              element.innerHTML="<br><br><h2> Please wait for</h2>"+secs+"<h4>seconds</h4>";
+              if(secs < 1){
+                clearTimeout(timer);
+                element.innerHTML='<br><h1 style="color:black">!!TEST LOADED</h1>';
+                element.innerHTML +='<a class="btn" href="http://localhost/html/quiz1.php">Start Quiz</a>';
+              }
+              secs--;
+              var timer=setTimeout('countDown('+secs+',"'+elem+'")',1000);
+
+            }
+          </script>
+          <div id="status"></div>
+          <script type="text/javascript"> countDown(5,"status");</script>
+
+          </div>
+          </div>
+          </section>
+   </body>
+</html>
